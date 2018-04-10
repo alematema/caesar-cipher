@@ -29,7 +29,7 @@
 	<title> Caesar Cipher </title>
 </head>
 
-<body onload="heightMe()">
+<body onload="heightMe();setUp(event)">
 
 	<div id='content' class='body-content'>
 
@@ -47,9 +47,9 @@
 
 
 				<div id='letra-sendo-criptografada'>
-				
-						<span>y</span>
-				
+
+					<span>y</span>
+
 				</div>
 				<div id='cipher-engine-gif'>
 
@@ -69,13 +69,15 @@
 			<div class="header history">
 				<h1>Histórico Criptografias</h1>
 				<hr class='history-2'>
-				<input class="pesquisar-historico-input disabled" type="search" placeholder="&#128269;">
+				<input class="pesquisar-historico-input" type="search" placeholder="&#128269;">
 			</div>
 
 			<div id='historico-criptografias' class='historico-criptografias'>
 
-				<ul class="lista-criptografias	">
+				<ul id='lista-criptografias' class="lista-criptografias">
 
+					
+<!--
 					<li class="item-criptografado" ondblclick='testar(event)'>
 
 						<img id='chave-digital-criptografia' src="img/rsz_digital-encry-key.jpg">
@@ -107,6 +109,8 @@
 						<span class="mais-info-item-criptografado">⋮</span>
 
 					</li>
+-->
+
 
 				</ul>
 
@@ -136,7 +140,7 @@
 
 			</div>
 
-			<div class='no-history invisivel'>
+			<div class='no-history'>
 				<img src="img/key.png" class="sem-historico-criptografias invisivel">
 				<div class="sem-historico-msgm invisivel">
 					<pre>
@@ -192,10 +196,19 @@
 
 	</script>
 
+	<script src="js/historico_criptografias.js"></script>
+
 </body>
 <script>
+	
 	function heightMe() {
 		document.getElementById('content').style.height = window.innerHeight * 0.90 + 'px';
+	}
+
+
+	function setUp(event) {
+		console.log('setting up ...');
+		atualizarHistoricoCriptografias();
 	}
 
 	function testar(event) {
