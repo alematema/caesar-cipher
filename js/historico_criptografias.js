@@ -1,4 +1,9 @@
-function atualizarHistoricoCriptografias(){
+
+var historico = document.querySelector('#history-box');
+
+historico.atualizar = atualizar;
+
+function atualizar(){
 	
 	if (document.getElementById('lista-criptografias').children.length > 0){
 			

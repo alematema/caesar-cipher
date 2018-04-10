@@ -37,10 +37,10 @@
 
 			<div class="header">
 				<span>Caesar Cipher</span>
-				<input class='cipher-input' id="input" type="input" placeholder="digite a frase para criptografar aqui">
+				<input class='cipher-input' id="input" type="input" onkeyup="this.atualizarBotaoCriptografar(event)" placeholder="digite a frase para criptografar aqui">
 				<span class='lock-key'>&#128272;</span>
 				<input class="cipher-input key-input" type="number" value="1">
-				<input class='btn-criptografar' type="button" value="&#9654;" disabled>
+				<input onclick="this.criptografar(event)" id='btn-criptografar' class='btn-criptografar' type="input" value="&#9654;" disabled>
 			</div>
 
 			<div id='output' class="output">
@@ -48,12 +48,12 @@
 
 				<div id='letra-sendo-criptografada'>
 
-					<span>y</span>
+					<span class="letra-sendo-criptografada invisivel"></span>
 
 				</div>
 				<div id='cipher-engine-gif'>
 
-					<img src="img/gears-animation.gif">
+					<img src="img/gears-animation.gif" class='cipher-engine-gif invisivel'>
 
 				</div>
 				<div id='letra-criptografada'></div>
@@ -151,7 +151,9 @@
 
 	<script src="js/modal.js"></script>
 	<script src="js/historico_criptografias.js"></script>
-
+	<script src="js/caesar_cipher.js"></script>
+	<script src="js/cipher.js"></script>
+	
 </body>
 
 <script src="js/onload.js"></script>

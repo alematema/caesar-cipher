@@ -5,5 +5,5 @@
 
 	function setUp(event) {
 		console.log('setting up ...');
-		atualizarHistoricoCriptografias();
+		historico.atualizar();
 	}

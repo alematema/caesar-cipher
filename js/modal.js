@@ -10,14 +10,12 @@
 		// When the user clicks the button, open the modal 
 
 		for (var i = 0; i < btns.length; i++) {
-			console.log(btns[i])
 			btns[i].onclick = function() {
 				modal.style.display = "block";
 			}
 		}
 
 		function maisInfoItemCriptografado(event) {
-			console.log(event.target);
 			modal.style.display = 'block';
 		}
 
