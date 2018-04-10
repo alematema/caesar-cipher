@@ -1,0 +1,28 @@
+.cipher {
+
+	/* Enable scroll if needed */
+	overflow: auto;
+/*	background-color: rgba(0, 0, 0, 0.2);*/
+	box-shadow: 0 0 2px 1px #555;
+	width: 100%;
+	border: 1px solid #666;
+	border-radius: 10px;
+
+}
+
+#caesar-cipher {
+	width: 70%;
+	left: 0;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+	#caesar-cipher {
+		width: 100%;
+	}
+
+
+
+}

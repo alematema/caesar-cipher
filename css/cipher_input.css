@@ -1,0 +1,87 @@
+
+.cipher-input {
+
+	width: 50%;
+	background-color: azure;
+	color: black;
+	border-radius: 10px;
+	font-size: 1.1em;
+	margin-left: 3%;
+
+}
+
+.key-input {
+
+	width: 5%;
+	font-size: 1.2em;
+	text-align: center;
+	margin-left: 0%;
+
+}
+
+.lock-key {
+
+	margin-left: 5%;
+	font-size: 200%;
+	font-weight: normal;
+
+}
+
+.btn-criptografar {
+
+	border-radius: 4px;
+	font-size: 1.5em;
+	margin-left: 5%;
+	margin-bottom: 1%;
+	background-color: #fff;
+	color: black;
+	cursor: pointer;
+	text-align: center;
+	padding-bottom: 5px;
+	width: 100px;
+
+}
+
+.btn-criptografar:disabled {
+
+	background-color: #aaa;
+	color: #777;
+	border: none;
+	cursor: not-allowed;
+	text-align: center
+}
+
+@media screen and (max-width: 1000px) {
+
+
+	.cipher-input {
+		width: 100%;
+		margin: 0;
+		display: block;
+		text-align: left;
+	}
+
+	.key-input {
+
+		width: 100%;
+		font-size: 1.2em;
+		text-align: center;
+		margin: 0;
+
+	}
+
+	.lock-key {
+		margin-left: 0%;
+	}
+
+	.btn-criptografar {
+		margin: 0px;
+		width: 100%;
+	}
+	
+	.btn-criptografar:disabled {
+		margin: 0px;
+		width: 100%;
+		color: #333;
+	}
+}

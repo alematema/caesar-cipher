@@ -1,0 +1,70 @@
+.output {
+
+	display: inline-flex;
+	padding: 10%;
+	align-items: center;
+
+}
+
+
+@keyframes criptografa-letra {
+	0% {
+		top: 15%
+	}
+	10%{
+		opacity: 0.9;
+	}
+	20%{
+		opacity: 0.7;
+	}
+	30%{
+		opacity: 0.6;
+	}
+	40%{
+		opacity: 0.5;
+	}
+	50%{
+		top:40%;
+		opacity: 0.1;
+	}
+	100% {
+		top: 70%
+	}
+}
+
+#letra-sendo-criptografada {
+
+	position: absolute;
+	left: 45%;
+	top: 15%;
+	animation-name: criptografa-letra;
+	animation-duration: 3s;/* or: Xms */
+	animation-iteration-count: infinite;
+	animation-direction: alternate;	/* or: normal */
+	animation-timing-function: ease-in-out;/* or: ease, ease-in,ease-out; ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+	animation-fill-mode: forwards;/* or: backwards, both, none */
+	animation-delay: 0s;/* or: Xms */
+}
+
+#letra-sendo-criptografada span {
+	font-size: 300%;
+	background-color: red;
+	color: white;
+	text-align: center;
+	border-radius: 10px;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	
+}
+
+
+#cipher-engine-gif img {
+
+	width: 100%;
+	height: auto;
+	opacity: 0.7;
+	margin-left: 140%;
+	margin-bottom: 70%;
+
+}

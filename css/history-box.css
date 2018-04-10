@@ -1,0 +1,133 @@
+.history-box-component {
+	width: 100%;
+	display: block;
+
+}
+
+#history-box {
+	width: 28%;
+	right: 10px;
+}
+
+.history {
+	font-size: 140%;
+	text-align: center;
+	padding: 0;
+	height: 10%;
+}
+
+.history-2 {
+	font-size: 0%;
+	height: -1px;
+}
+
+.pesquisar-historico-input {
+	margin-top: 2%;
+	margin-bottom: 2%;
+	width: 80%;
+	border-radius: 10px;
+	font-size: 75%;
+
+}
+
+.historico-criptografias {
+	/*
+	border: 1px solid #666;
+	border-radius: 10px;
+*/
+}
+
+li {
+	display: inline-flex;
+}
+
+
+.lista-criptografias img {
+	margin: auto auto;
+	width: 20%;
+	height: 70px;
+
+}
+
+.resumo-item-criptografado {
+	margin: auto auto;
+}
+
+.mais-info-item-criptografado {
+
+	margin: auto auto;
+	font-size: 150%;
+	font-weight: bold;
+	font-family: Arial, Helvetica, serif;
+
+}
+
+.no-history {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+.sem-historico-criptografias {
+	position: absolute;
+	opacity: 0.27;
+}
+
+img.sem-historico-criptografias {
+	margin-top: 20px;
+	width: 100%;
+}
+
+
+div.sem-historico-msgm {
+	position: absolute;
+	top: 35%;
+	width: 80%;
+	right: 10%;
+	left: 10%;
+	color: tomato;
+}
+
+div.sem-historico-msgm pre {
+	margin-top: 20%;
+	font-size: 250%;
+	text-align: center;
+	line-height: 140%;
+	font-weight: bolder;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+	#history-box {
+		width: 100%;
+		right: 0;
+	}
+
+	.pesquisar-historico-input {
+		width: 100%;
+	}
+
+	img.sem-historico-criptografias {
+		width: 50%;
+		top: 50%;
+		right: 25%;
+		left: 25%;
+	}
+
+
+	div.sem-historico-msgm {
+		top: 25%;
+		width: 80%;
+		right: 10%;
+		left: 10%;
+	}
+
+	div.sem-historico-msgm pre {
+		font-size: 210%;
+	}
+
+
+}
