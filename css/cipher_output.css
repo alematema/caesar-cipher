@@ -3,50 +3,104 @@
 	display: inline-flex;
 	padding: 10%;
 	align-items: center;
+	position: relative;
 
 }
 
 
 @keyframes criptografa-letra {
 	0% {
-		top: 15%
+		top: 10%;
+		opacity: 1;
 	}
-	10%{
+
+	20% {
 		opacity: 0.9;
 	}
-	20%{
-		opacity: 0.7;
+	50% {
+		top: 25%;
+		opacity: 0.8;
 	}
-	30%{
-		opacity: 0.6;
-	}
-	40%{
+
+	80% {
 		opacity: 0.5;
 	}
-	50%{
-		top:40%;
-		opacity: 0.1;
-	}
 	100% {
-		top: 70%
+		top: 50%;
+		opacity: 0.0;
 	}
 }
 
-#letra-sendo-criptografada {
+@keyframes letra-criptografa {
+
+	0% {
+		opacity: 0;
+		top: 50%
+	}
+
+	50% {
+		top: 65%;
+		opacity: 0.5;
+	}
+	100% {
+		top: 80%;
+		opacity: 1.0;
+	}
+
+}
+
+#.letra-sendo-criptografada{
+	position: relative;
+}
+
+.letra-sendo-criptografada {
 
 	position: absolute;
-	left: 45%;
-	top: 15%;
+	left: 110%;
+	top: 10%;
 	animation-name: criptografa-letra;
-	animation-duration: 3s;/* or: Xms */
+	animation-duration: 1.0s;
+	/* or: Xms */
 	animation-iteration-count: infinite;
-	animation-direction: alternate;	/* or: normal */
-	animation-timing-function: ease-in-out;/* or: ease, ease-in,ease-out; ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
-	animation-fill-mode: forwards;/* or: backwards, both, none */
-	animation-delay: 0s;/* or: Xms */
+	animation-direction: normal;
+	/* alternate or: normal */
+	animation-timing-function: linear;
+	/* or: ease, ease-in,ease-out; ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+	animation-fill-mode: backwards;
+	/* or: backwards, both, none */
+	animation-delay: 0s;
+	/* or: Xms */
+}
+
+.letra-criptografada {
+
+	position: absolute;
+	left: 110%;
+	top: 50%;
+	animation-name: letra-criptografa;
+	animation-duration: 1.0s;
+	/* or: Xms */
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	/* alternate or: normal */
+	animation-timing-function: ease-in-out;
+	/* or: ease, ease-in,ease-out; ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+	animation-fill-mode: none;
+	/* or: backwards, both, none */
+	animation-delay: 0s;
+	/* or: Xms */
+}
+
+
+
+.pause-animation {
+
+	animation-play-state: paused;
+
 }
 
 #letra-sendo-criptografada span {
+	
 	font-size: 300%;
 	background-color: red;
 	color: white;
@@ -55,16 +109,47 @@
 	padding: 10px;
 	padding-left: 20px;
 	padding-right: 20px;
+
+}
+
+.frase-cripto-containder{
+	
+	position: absolute;
+	margin: 0 auto;
+	left: 1%;
+	right: 1%;
+	bottom: 10%;	
 	
 }
 
 
 #cipher-engine-gif img {
 
-	width: 100%;
+	width: 80%;
 	height: auto;
-	opacity: 0.7;
+	opacity: 0.85;
 	margin-left: 140%;
-	margin-bottom: 70%;
+	/*	margin-bottom: 30%;*/
+}
 
+.selecionada {
+	font-size: 5em;
+	color: white;
+	background-color: red;
+	text-align: center;
+	opacity: 0.85;
+	padding: 0.2em;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+	
+	padding-bottom: 0.5em;
+	border: 2px solid #888;
+	border-radius: 10px;
+	transition: 0.8s linear;
+}
+
+.letra {
+	font-size: 3em;
+	vertical-align: middle;
+	transition: 0.7s linear;
 }
