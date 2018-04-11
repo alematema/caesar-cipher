@@ -122,6 +122,16 @@
 	
 }
 
+.frase-do-input-container{
+	
+	position: absolute;
+	margin: 0 auto;
+	left: 1%;
+	right: 1%;
+	top: 1%;	
+	
+}
+
 
 #cipher-engine-gif img {
 
@@ -152,4 +162,49 @@
 	font-size: 3em;
 	vertical-align: middle;
 	transition: 0.7s linear;
+}
+
+
+.selecionada-media {
+	font-size: 2.5em;
+	color: white;
+	background-color: red;
+	text-align: center;
+	opacity: 0.85;
+	padding: 0.1em;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+	
+	padding-bottom: 0.25em;
+	border: 2px solid #888;
+	border-radius: 10px;
+	transition: 0.8s linear;
+}
+
+.letra-media {
+	font-size: 1.5em;
+	vertical-align: middle;
+	transition: 0.7s linear;
+}
+
+.selecionada-input {
+	font-size: 5em;
+	color: white;
+	background-color: red;
+	text-align: center;
+	opacity: 0.85;
+	padding: 0.1em;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+	
+	padding-bottom: 0.25em;
+	border: 2px solid #888;
+	border-radius: 10px;
+	transition: 0.1s linear;
+}
+
+.letra-input {
+	font-size: 3em;
+	vertical-align: middle;
+	transition: 0.1s linear;
 }
