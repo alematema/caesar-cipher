@@ -24,14 +24,23 @@ output.addLetraCriptografada = addLetraCriptografada;
 output.selecionarLetra = selecionarLetra;
 output.deselecionarLetra = deselecionarLetra;
 fraseCriptografadaContainer.toCharArray = toCharArray;
+fraseCriptografadaContainer.limpar = limpar;
 fraseDoInputContainer.getLetra = getLetra;
+fraseDoInputContainer.limpar = limpar;
+
+
+
+function limpar(){
+	while (this.firstChild) {
+		this.removeChild(this.firstChild);
+	}
+}
 
 function toCharArray() {
 
 	var charArray = [];
 
 	for (var i = 0; i < this.children.length; i++) {
-
 
 		charArray.push(this.children[i].textContent);
 
@@ -48,9 +57,7 @@ function addLetraCriptografada(letra) {
 	var fraseArray = fraseCriptografadaContainer.toCharArray();
 	fraseArray.push(letra);
 
-	while (fraseCriptografadaContainer.firstChild) {
-		fraseCriptografadaContainer.removeChild(fraseCriptografadaContainer.firstChild);
-	}
+	fraseCriptografadaContainer.limpar();
 
 	var span;
 
@@ -195,6 +202,9 @@ function myFn() {
 		i = 0; //controla duration de duracaoCriptoUmaLetra ms 
 		j = 0; // indice para navegar 1 letra do array a cada duracaoCriptoUmaLetra ms
 		header.restore();
+		setTimeout(function(){fraseDoInputContainer.limpar();
+		fraseCriptografadaContainer.limpar();},1500);
+		
 	}
 
 }

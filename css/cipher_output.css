@@ -49,7 +49,7 @@
 
 }
 
-#.letra-sendo-criptografada{
+#.letra-sendo-criptografada {
 	position: relative;
 }
 
@@ -100,7 +100,7 @@
 }
 
 #letra-sendo-criptografada span {
-	
+
 	font-size: 300%;
 	background-color: red;
 	color: white;
@@ -112,24 +112,24 @@
 
 }
 
-.frase-cripto-containder{
-	
+.frase-cripto-containder {
+
 	position: absolute;
 	margin: 0 auto;
 	left: 1%;
 	right: 1%;
-	bottom: 10%;	
-	
+	bottom: 10%;
+
 }
 
-.frase-do-input-container{
-	
+.frase-do-input-container {
+
 	position: absolute;
 	margin: 0 auto;
 	left: 1%;
 	right: 1%;
-	top: 1%;	
-	
+	top: 1%;
+
 }
 
 
@@ -151,7 +151,7 @@
 	padding: 0.2em;
 	padding-left: 0.4em;
 	padding-right: 0.4em;
-	
+
 	padding-bottom: 0.5em;
 	border: 2px solid #888;
 	border-radius: 10px;
@@ -174,7 +174,7 @@
 	padding: 0.1em;
 	padding-left: 0.2em;
 	padding-right: 0.2em;
-	
+
 	padding-bottom: 0.25em;
 	border: 2px solid #888;
 	border-radius: 10px;
@@ -196,7 +196,7 @@
 	padding: 0.1em;
 	padding-left: 0.2em;
 	padding-right: 0.2em;
-	
+
 	padding-bottom: 0.25em;
 	border: 2px solid #888;
 	border-radius: 10px;
@@ -207,4 +207,95 @@
 	font-size: 3em;
 	vertical-align: middle;
 	transition: 0.1s linear;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+	#cipher-engine-gif img {
+
+		width: 80%;
+		height: auto;
+		opacity: 0.85;
+		margin: 0 30%;
+	}
+
+
+	@keyframes criptografa-letra {
+		0% {
+			left: 10%;
+		}
+
+		20% {
+			opacity: 0.9;
+		}
+		50% {
+			left: 25%;
+			opacity: 0.8;
+		}
+
+		80% {
+			opacity: 0.5;
+		}
+		100% {
+			left: 50%;
+			opacity: 0.0;
+		}
+	}
+
+	@keyframes letra-criptografa {
+
+		0% {
+			opacity: 0;
+			left: 50%
+		}
+
+		50% {
+			left: 65%;
+			opacity: 0.5;
+		}
+		100% {
+			left: 95%;
+			opacity: 1.0;
+		}
+
+	}
+
+	.letra-sendo-criptografada {
+		width: 10%;
+		height: 20%;
+		left: 10%;
+		top: 35%;
+		bottom: 40%;
+	}
+
+	.letra-criptografada {
+		width: 10%;
+		height: 20%;
+		left: 10%;
+		top: 35%;
+		bottom: 40%;
+	}
+
+	.selecionada-input {
+		font-size: 2.5em;
+	}
+
+	.letra-input {
+		font-size: 1.5em;
+	}
+
+	.selecionada {
+		font-size: 2.5em;
+	}
+
+	.letra {
+		font-size: 1.5em;
+	}
+	
+	.invisivel{
+		display: none;
+	}
+
+
 }
