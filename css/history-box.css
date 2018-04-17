@@ -1,12 +1,12 @@
 .history-box-component {
 	width: 100%;
 	display: block;
-
 }
 
 #history-box {
 	width: 28%;
 	right: 10px;
+	display:block;
 }
 
 .history {
@@ -35,6 +35,7 @@
 	border: 1px solid #666;
 	border-radius: 10px;
 */
+
 }
 
 li {
@@ -97,7 +98,17 @@ div.sem-historico-msgm pre {
 }
 
 
+.fade-in{
+	
+	opacity: 1;
+	transition: 2s;
+	
+}
 
+.fade-out{
+	opacity: 0;
+	transition: 2s;
+}
 
 @media screen and (max-width: 1000px) {
 

@@ -30,7 +30,7 @@ fraseDoInputContainer.limpar = limpar;
 
 
 
-function limpar(){
+function limpar() {
 	while (this.firstChild) {
 		this.removeChild(this.firstChild);
 	}
@@ -87,32 +87,32 @@ function newSpan(char, cssClass) {
 
 }
 
-function clear(){
-	
-	document.getElementById('some-text').textContent='';
+function clear() {
+
+	document.getElementById('some-text').textContent = '';
 	input.classList.add('invisivel');
 	document.querySelector('.lock-key').textContent = '';
 	document.querySelector('.key-input').classList.add('invisivel');
 	btnCriptografar.classList.add('invisivel');
-		
+
 }
 
-function restore(){
-	
-	document.getElementById('some-text').textContent='Caesar Cipher';
+function restore() {
+
+	document.getElementById('some-text').textContent = 'Caesar Cipher';
 	input.classList.remove('invisivel');
-	input.value='';
+	input.value = '';
 	document.querySelector('.lock-key').innerHTML = '&#128272;';
 	document.querySelector('.key-input').classList.remove('invisivel');
 	btnCriptografar.classList.remove('invisivel');
 	input.atualizarBotaoCriptografar();
-	
+
 }
 
-function writeOut(string){
-	
-	document.getElementById('some-text').textContent=string;
-	
+function writeOut(string) {
+
+	document.getElementById('some-text').textContent = string;
+
 }
 
 function writeSrc(srcArray) {
@@ -131,7 +131,7 @@ function writeSrc(srcArray) {
 function write(criptoArray, srcArray) {
 
 	output.writeSrc(srcArray);
-	
+
 	header.clear();
 	header.writeOut('Criptografando...');
 
@@ -202,9 +202,13 @@ function myFn() {
 		i = 0; //controla duration de duracaoCriptoUmaLetra ms 
 		j = 0; // indice para navegar 1 letra do array a cada duracaoCriptoUmaLetra ms
 		header.restore();
-		setTimeout(function(){fraseDoInputContainer.limpar();
-		fraseCriptografadaContainer.limpar();},1500);
-		
+		fraseDoInputContainer.limpar();
+		fraseCriptografadaContainer.limpar();
+		historico.addCriptografia(criptoArrayGB, srcArrayGB);
+		setTimeout(function () {
+			
+		}, 1500);
+
 	}
 
 }
